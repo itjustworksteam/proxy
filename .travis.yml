@@ -6,5 +6,5 @@ script:
 after_success:
     - if [ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
       docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
-      docker push therickys93/telegrambot;
+      docker push therickys93/proxy;
       fi
